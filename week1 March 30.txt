@@ -1,0 +1,24 @@
+boolean phone = true;
+int price = 4000;
+string mobilename = "Samsung"
+
+public static void main(String[] arg
+
+{
+
+Mobile mo = new Mobile();
+
+ boolean ph = mo.phone;
+
+System.out.println(ph); 
+
+ int money = mo.price;
+
+System.out.println(money); 
+
+string name = mo.mobilename;
+System.out.println(name); 
+
+
+}
+
