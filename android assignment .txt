@@ -1,0 +1,42 @@
+package testleaf;
+
+public class Android {
+	
+	//create 5 varaiable 
+	//long,Boolean,String,Int,Float)
+	
+	long price = 20000;
+	boolean android = true;
+	String name = "oneplus" ;
+	int mobileno = 987878787 ;
+	float version = 2.6f;
+	
+	public static void main(String args[])
+	{
+		
+		Android mobile = new Android();
+		
+		long p = mobile.price;
+		boolean A = mobile.android;
+		String N = mobile.name;
+		int mobno = mobile.mobileno;
+		float v = mobile.version;
+		
+		System.out.println(p);
+		
+		System.out.println(N);
+		
+		System.out.println(A);
+		
+		System.out.println(mobno);
+		
+		System.out.println(v);
+		
+	}
+	
+	
+	
+	
+	
+
+}
