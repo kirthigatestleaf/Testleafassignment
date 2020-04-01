@@ -1,0 +1,44 @@
+package testleaf;
+
+public class testleafpage{
+	
+	public static void main(String args[])
+	{
+		
+	        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+		
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("http://leaftaps.com/opentaps/control/main");
+	              driver.findElementByID("username").sendKeys("DemosalesManager");
+                      driver.findElementByID("password").sendKeys("crmsfa");
+                      driver.findElementByClassName("decorativeSubmit").click();
+                      driver.findElementByLinkText("CRM/SFA").click();
+                            driver.findElementByLinkText("Leads").click();
+                            driver.findElementByLinkText("Create Lead").click();
+	driver.findElementById("createLeadForm_companyName").sendKeys("CSC");
+	driver.findElementById("createLeadForm_firstName").sendKeys("Kirthi");		
+		driver.findElementById("createLeadForm_lastName").sendKeys("Mani");
+	driver.findElementByClassName("smallSubmit").click();	
+
+String title = driver.getTitle();
+
+if (title.equalsIgnoreCase("View Lead"))
+		{
+			System.out.println(" Lead is created");
+		}else
+			System.out.println(" Lead is not created");
+
+		// close browser
+		driver.close();
+
+}}
+
+
+		
+
+
+
+		
+	}
+	
